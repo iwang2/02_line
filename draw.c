@@ -19,11 +19,14 @@ void draw_line (int x0, int y0, int x1, int y1, screen s, color clr) {
 
   while ( x <= x1 ) {
     plot(s, clr, x, y);
-    if ( d > 0 ) {
-      y++;
-      d += 2*b;
-    }
-    x++;
-    d += 2*a;
+
+    //if ( -b <= 1 && -b >= 0 ) {
+      if ( d > 0 ) {
+	y++;
+	d += 2*b;
+      }
+      x++;
+      d += 2*a;
+      //}
   }
 }
