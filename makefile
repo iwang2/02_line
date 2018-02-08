@@ -18,4 +18,6 @@ run: main
 	./main
 
 clean:
+	rm main
+	rm lines.png
 	rm *.o *~
