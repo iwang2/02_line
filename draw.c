@@ -18,7 +18,6 @@ void draw_line (int x0, int y0, int x1, int y1, screen s, color clr) {
   double m;
   if ( b == 0 ) m = 2;
   else m = a * 1.0 / -b;
-  printf("m = %f\n", m);
 
   if ( b == 0 ) {
     if ( y > y1 ) {

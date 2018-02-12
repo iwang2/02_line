@@ -17,6 +17,23 @@ int main() {
 
   clear_screen(s);
 
+  /*
+  int i;
+  int add = 10;
+  for ( i = 0; i <= 500; i += add ) {
+    draw_line(i, 0, 500, i, s, c);
+  }
+  for ( i = 0; i <= 500; i += add ) {
+    draw_line(0, i, i, 500, s, c);
+  }
+  for ( i = 0; i <= 500; i += add ) {
+    draw_line(0, 500-i, i, 0, s, c);
+  }
+  for ( i = 0; i <= 500; i += add ) {
+    draw_line(i, 500, 500, 500-i, s, c);
+  }
+  */
+
   draw_line(0, 0, 300, 500, s, c); // oct II in green
   draw_line(0, 500, 300, 0, s, c); // oct VII
   draw_line(0, 0, 500, 500, s, c); // m = 1
