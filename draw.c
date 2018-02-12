@@ -19,9 +19,21 @@ void draw_line (int x0, int y0, int x1, int y1, screen s, color clr) {
   if ( b == 0 ) m = 2;
   else m = a * 1.0 / -b;
   printf("m = %f\n", m);
+
+  if ( b == 0 ) {
+    if ( y > y1 ) {
+      int temp = y;
+      y = y1;
+      y1 = temp;
+    }
+    while ( y <= y1 ) {
+      plot(s, clr, x, y);
+      y++;
+    }
+  }
     
   // VII
-  if ( m < -1 ) {
+  else if ( m < -1 ) {
     d = a - 2*b;
     while ( x <= x1 ) {
       plot(s, clr, x, y);

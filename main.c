@@ -31,7 +31,8 @@ int main() {
 
   c.red = 0;
   c.blue = MAX_COLOR;
-  //draw_line(300, 0, 300, 400, s, c); // vertical in blue
+  draw_line(300, 0, 300, 400, s, c); // vertical in blue
+  draw_line(200, 500, 200, 0, s, c); // vertical going the other way
 
   display(s);
   save_extension(s, "lines.png");
